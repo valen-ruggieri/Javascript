@@ -1,0 +1,198 @@
+
+
+/* Estilos del body de la pagina */
+
+body{
+  background: #f69b10;
+  box-shadow: inset 6px 6px 7px #623e06,
+              inset -6px -6px 7px #ffb61a;
+  font-family: 'Baloo Bhaina 2', cursive;}
+
+
+                      /* MENU */
+
+/* Estilos del item (card del producto) */
+.item {
+  
+  padding: 10px;
+  background-color: #f8af40;
+  border-radius: 20px;
+  box-shadow: inset 9.91px 9.91px 15px #f69b10, inset -9.91px -9.91px 15px #f69b10;}
+
+  /* Estilos del titulo de card de producto */
+.item-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  color:#f69b10;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+/* Estilos de la imagen del producto */
+.item-image {
+  height: 150px;
+  width: 100%;
+}
+/* Estilo de los detalles soibre el producto */
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 40px 10px 40px;
+}
+
+/* Margen sobre el precio dentro de los detalles */
+.item-details > .item-price {margin: 0;}
+
+
+
+                        /* CARRITO */
+
+/* Items del carrito */
+.shopping-cart-items {
+  padding: 12px 0px;
+}
+
+/* Estilo del contenedor carrito */
+.carritoBck{
+
+  border-radius: 10px;
+  background: #080808;
+  box-shadow:  7px 7px 14px #060606,
+               -7px -7px 14px #0a0a0a;
+}
+/* Estilos de cabecera de carrito */
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc;
+}
+/* Estilos de imagen de las card de productos agregados */
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+/* Estilos del input de cantidad que figura por item agregado */
+.inputCantidad {
+  max-width: 80px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.342);
+  padding: 7px 30px 2px 10px;
+  color:#f69b10;
+
+}
+
+/* Estilos del card donde figura el total de la compra */
+.shopping-cart-total {
+  min-height: 96px;
+  color:#f69b10;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+
+}
+
+/*  Color para utilizar de paleta */
+.colorTextOrange{
+  color:#f69b10;
+  text-shadow: 1px 0px 1px rgb(0, 0, 0);
+
+}
+
+                /* BOTONES */
+
+/* Botos de los items de productos para agregar */
+.item-button  {
+  position: relative;
+  padding: 7px 30px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+  background-color: #2ecc71;
+  border: none;
+  border-bottom: 5px solid #27ae60;
+  text-shadow: 0px -2px #27ae60;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+ }
+ /* Accion de los botones agregar(Utilizo una vez en el de "compra") */
+ .item-button:hover, .item-button:active {
+  -webkit-transform: translate(0px,5px);
+  -ms-transform: translate(0px,5px);
+  transform: translate(0px,5px);
+  color: #ffffff;
+  background-color: #e62222;
+  border-bottom: 5px solid #610101;
+  text-shadow: 0px -2px #e62222;
+ }
+
+ /* Boton de quitar producto de carrito */
+
+ .noselect {
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  background: #e62222;
+ }
+
+ /* Acciones del boton de quitar */
+ 
+ .noselect, .noselect span {
+  transition: 200ms;
+ }
+ 
+ .noselect .text {
+  transform: translateX(5px);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+ }
+ 
+ .noselect .icon {
+  position: absolute;
+  border-left: 1px solid #c41b1b;
+  transform: translateX(55px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .noselect svg {
+  width: 15px;
+  fill: #eee;
+ }
+ 
+ .noselect:hover {
+  background: #ff3636;
+ }
+ 
+ .noselect:hover .text {
+  color: transparent;
+ }
+ 
+ .noselect:hover .icon {
+  width: 100px;
+  border-left: none;
+  transform: translateX(0);
+ }
+ 
+ .noselect:focus {
+  outline: none;
+ }
+ 
+ .noselect:active .icon svg {
+  transform: scale(0.8);
+ }
+
+
+ .spinner-border{margin-left: 220px;}
+ 
